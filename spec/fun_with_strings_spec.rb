@@ -53,7 +53,7 @@ describe 'anagram grouping', :pending => true do
     @anagrams =  'scream cars for four scar creams'.anagram_groups
     @anagrams.each { |group| group.sort! }
     [%w(cars scar), %w(four), %w(for), %w(creams scream)].each do |group|
-        @anagrams.should include(group)
+        @anagrams.should include?(group)
     end
   end
     
